@@ -1,13 +1,11 @@
 # LL_Operations
-All basic linked list operations
 
-<ol>
-  <il>Insert at front</li>
-  <il>Insert at end</li>
-  <il>Insert at a Position</li>
-  <il>Display Linked List</li>
-  <il>Get max Element</li>
-  <il>Get Length</li>
-  <il>Delete first</li>
-  <il>Delete at position n</li>
-</ol>
+All basic linked list operations
+- 1.Insert at front
+- 2.Insert at end
+- 3.Insert at Position n
+- 4.Display Linked List
+- 5.Get max Element
+- 6.Get Length
+- 7.delete first
+- 8.Delete at position n
