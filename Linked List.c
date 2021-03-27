@@ -116,9 +116,9 @@ void insertSorted(struct Node *p,int x){
 
 // Delete First Node
 void deleteFirst(){
-	struct Node *p = first;
+	//struct Node *p = first;
 	first = first->next;
-	free(p);
+	//free(p);
 }
 
 // Delete at any Node
@@ -142,6 +142,25 @@ void deleteAtPos(int index){
 		}
 	}
 	
+}
+
+// Check Link List is sorted or not
+void checkSorted () {
+	struct Node *p = first;
+	int x = -32786;
+	int i;
+	while(p!= NULL){
+		if(p->data < x){
+			printf("Unsorted");
+		}else{
+			x=p->data;
+			p=p->next;
+		}
+	}
+	printf("Sorted");
+	
+
+
 }
 
 
@@ -196,6 +215,11 @@ int main()
 				printf("Delete pos : "); 
 				scanf("%d", &pos);
 				deleteAtPos(pos);
+				break;
+			case 9:
+				printf("Check for Sorting....."); 
+				checkSorted();
+				getch();
 				break;
 			default:
 				printf("Wrong option");
